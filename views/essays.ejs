@@ -1,0 +1,10 @@
+<%- include("partials/header") %> 
+<!-- post.filename.replace(".ejs", "") -->
+<h1>All Pages</h1>
+<ul>
+    <% essays.forEach(post => { %>
+        <li><a href="/<%= post.fileName.replace(".ejs", "") %>"><%= post.title %></a></li>
+    <% }) %>
+</ul>
+
+<%- include("partials/footer") %>

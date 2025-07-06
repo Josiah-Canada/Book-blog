@@ -1,0 +1,26 @@
+<%- include("partials/header") %>
+
+<h1>Write us an essay</h1>
+<form action="/create" method="POST">
+  <!-- <label for="title" class="range">Title:</label> -->
+  <input
+    type="text"
+    id="title"
+    name="title"
+    class="other"
+    placeholder="give your essay a title"
+  /><br /><br />
+  <!-- <label for="content">Content:</label> -->
+  <textarea
+    id="content"
+    class="other"
+    name="content"
+    placeholder="write us an essay and have it show up on the essays page."
+    cols="50"
+    rows="30"
+  ></textarea
+  ><br /><br />
+  <button type="submit">Create Page</button>
+</form>
+
+<%- include("partials/footer") %>
